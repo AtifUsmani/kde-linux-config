@@ -17,6 +17,4 @@ WORKDIR /home/tester
 COPY --chown=tester:tester . /home/tester/setup
 WORKDIR /home/tester/setup
 
-# Run script automatically (auto-yes to prompts)
-# CMD bash -c "yes '' | bash setup.sh; echo '--- SCRIPT DONE ---'; exec bash"
-CMD bash
+CMD ["bash"]

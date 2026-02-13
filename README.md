@@ -38,7 +38,9 @@ chmod +x setup.sh
 ## Devlopment
 
 ```bash
-sudo docker build --no-cache -t arch-test .
+sudo pacman -S docker-buildx
+
+sudo DOCKER_BUILDKIT=1 docker build -t arch-test .
 
 sudo docker run -it arch-test
 ```
