@@ -1,0 +1,21 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "adolfo@librepixels.com",
+                "Name": "zayronxio"
+            }
+        ],
+        "Name": "Kaffeine",
+        "Id": "Kaffeine",
+        "Description": "",
+        "Category": "Utilities",
+        "Icon": "caffeine-cup-full",
+        "License": "GPL-3.0+",
+        "Version": "0.4",
+        "Website": "https://store.kde.org/p/2259520/"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-NotificationArea": "true",
+    "X-Plasma-NotificationAreaCategory": "SystemServices"
+}

@@ -1,0 +1,8 @@
+install.sh
+.zsh_history
+.config/dolphinrc
+.config/kdeglobals
+.config/kglobalshortcutsrc
+.config/konsolerc
+.config/plasma-org.kde.plasma.desktop-appletsrc
+.config/kwinrc

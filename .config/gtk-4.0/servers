@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="sftp://192.168.29.160/" added="2025-10-11T19:52:30.190384Z" modified="2025-10-11T19:52:30.190391Z" visited="2025-10-11T19:52:30.190387Z">
+    <title>/ on 192.168.29.160</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-10-11T19:52:30.190389Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
