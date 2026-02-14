@@ -52,6 +52,8 @@ if confirm "Install core AUR packages?"; then
         zoxide exa fastfetch neovim fzf \
         ttf-jetbrains-mono-nerd cava \
         || echo "Some packages failed"
+
+    paru -S --noconfirm yazi ffmpeg 7zip jq poppler fd ripgrep fzf zoxide resvg imagemagick lazygit bat gping dust broot|| echo "Some packages failed"
 fi
 
 # -------------------------

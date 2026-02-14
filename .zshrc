@@ -155,13 +155,47 @@ c2f() {
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pff="fastfetch -c ~/.config/fastfetch/configs/config-full.jsonc"
-alias ls="exa -lh --group-directories-first --icons=auto"
-alias ll='exa -al --group-directories-first --icons=always'
+alias ls="exa -lh --group-directories-first --icons=auto --git"
+alias ll='exa -alh --group-directories-first --icons=always --git'
 alias lt='exa -a --tree --level=2 --icons=always'
+alias la='eza -lha --icons --git'
+alias l='eza -lh --icons'
+
 alias cd="zd"
+
+# grep → ripgrep
+alias grep='rg'
+
+# safer rm/cp/mv
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# mkdir with parents
+alias mk='mkdir -p'
+
+
+# reload zsh config
+alias reload='source ~/.zshrc'
+
+# lazygit
+alias lg='lazygit'
+
+
+# top → btop
+alias top='btop --force-utf'
+alias htop='btop --force-utf'
+
 alias ff='fd -HI -a --exclude .snapshots'
 alias is='fzf --preview="bat --style=numbers --color=always {}"'
 alias nis='nvim $(fzf --preview="bat --color=always {}")'
+alias yay="paru"
+
+# cat → bat
+alias cat='bat --paging=never'
+alias ccat='bat'   # keep paging version available
+
+alias ping="gping"
 
 # Cleanup orphaned packages
 alias cleanup="sudo pacman -Rsn $(pacman -Qtdq)"
@@ -177,7 +211,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-source  ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/atifu/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -185,15 +219,17 @@ export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 . /opt/anaconda/etc/profile.d/conda.sh
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:~/.lmstudio/bin"
+export PATH="$PATH:/home/atifu/.lmstudio/bin"
 # End of LM Studio CLI section
 
 source /usr/share/nvm/init-nvm.sh
 # eval "$(starship init zsh)"
 export CAPACITOR_ANDROID_STUDIO_PATH=/usr/bin/android-studio
 
-export ANDROID_SDK_ROOT=~/Android/Sdk/
+export ANDROID_SDK_ROOT=/home/atifu/Android/Sdk/
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
 
 # eval "$(oh-my-posh init zsh)"
+
+source /home/atifu/.config/broot/launcher/bash/br
