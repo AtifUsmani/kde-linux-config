@@ -158,6 +158,15 @@ if confirm "Copy configs, themes and .zshrc?"; then
         fi
     fi
 
+    # Copy .p10k.zsh safely
+    if [ -f "$SCRIPT_DIR/.p10k.zsh" ]; then
+        if [ "$SCRIPT_DIR/.p10k.zsh" != "$HOME/.p10k.zsh" ]; then
+            cp -v "$SCRIPT_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+        else
+            echo ".p10k.zsh already in place, skipping"
+        fi
+    fi
+
 fi
 
 # -------------------------
